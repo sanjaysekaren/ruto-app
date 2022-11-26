@@ -6,7 +6,6 @@ module.exports = function(app){
     app.use(bodyParser.json());
     app.use(bodyParser.urlencoded({extended:false}));
     
-
     app.get('/api/getAllDetails',function(req,res){
         RutoAddress.find({},function(err,result){
             if(err) throw err;

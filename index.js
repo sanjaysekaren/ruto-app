@@ -9,6 +9,7 @@ var app = express();
 var port =process.env.PORT|| 3200;
 
 mongoose.connect(config.getDBConnectionString());
+
 // setupController(app);
 apiController(app);
 
